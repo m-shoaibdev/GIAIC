@@ -11,8 +11,19 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        bcolor: "var(--bcolor)",
+        lightblue: "var(--light-blue)",
       },
+      fontFamily: {
+        nunito: ["var(--font-nunito-sans)", "sans-serif"],
+        oleo: ["var(--font-oleo-script)", "cursive"],
+      }
     },
+    // container: {
+    //   center: true,
+    // },
   },
   plugins: [],
 };
