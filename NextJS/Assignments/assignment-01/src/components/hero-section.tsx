@@ -6,7 +6,7 @@ import round04 from '../public/round04.png';
 
 const HeroSection = () => {
   return (
-    <div className='w-full min-h-[calc(100vh-80px)] bg-lightblue flex justify-center gap-8 py-5'>
+    <div className='w-full min-h-[calc(100vh-80px)] bg-lightblue flex justify-center gap-8 py-5 mb-10'>
 
       <div className='w-1/3  flex flex-col justify-center gap-2 '>
         <h1 className='text-7xl font-oleo text-primary '>Be comfortable in your skin</h1>
@@ -36,9 +36,6 @@ const HeroSection = () => {
           className='absolute right-[-120px] border-2 border-primary border-dashed  rounded-full ' />
 
       </div>
-
-
-
     </div>
   )
 }
