@@ -7,10 +7,11 @@ import skin1 from "../public/kys01.jpg";
 import skin2 from "../public/kys02.jpg";
 import skin3 from "../public/kys03.jpg";
 import ProductGrid from "@/components/productgrid";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Header />
       <HeroSection />
       <HrHeadDivider leftline={true} text="KNOW YOUR SKIN" rightline={true}/>
@@ -33,14 +34,7 @@ export default function Home() {
         </div>
             <HrHeadDivider leftline={true}  text="Nourish the outer health of your body! " rightline={false}/>
       </div>
-
-
-      <main>
-        <h1 className="text-3xl font-oleo font-bold">main</h1>
-      </main>
-      <footer>
-        <h1 className="text-3xl  ">footer</h1>
-      </footer>
-    </div>
+      <Footer />
+    </>
   );
 }
