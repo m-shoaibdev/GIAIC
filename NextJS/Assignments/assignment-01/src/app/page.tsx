@@ -12,7 +12,7 @@ import Footer from "@/components/footer";
 export default function Home() {
   return (
     <>
-      <Header />
+      
       <HeroSection />
       <HrHeadDivider leftline={true} text="KNOW YOUR SKIN" rightline={true}/>
       <div className="md:flex justify-between  text-center container mx-auto md:gap-3 my-10">
@@ -21,7 +21,7 @@ export default function Home() {
         <SkinBox src={skin3} alt="Dry skin/Oily skin" h2head="Dry skin/Oily skin" partext="To keep the skin healthy and hydrated, use a gentle cleanser, moisturize regularly with a thick, oil-based cream." />
       </div>
       {/* Product section */} 
-      <div className="bg-lightblue pt-8 my-5">
+      <div className="bg-lightblue pt-8 my-5 ">
         <div className="md:flex gap-4 container mx-auto">
           <ProductGrid />
           <div className="md:w-1/2">
@@ -34,7 +34,6 @@ export default function Home() {
         </div>
             <HrHeadDivider leftline={true}  text="Nourish the outer health of your body! " rightline={false}/>
       </div>
-      <Footer />
     </>
   );
 }
