@@ -29,3 +29,22 @@ body {
     text-wrap: balance;
   }
 }
+
+
+@media screen and (max-width: 640px) {
+  p{
+    font-size: 16px !important;
+  }
+}
+
+/* min 550px or max 767px */
+
+@media screen and (min-width: 550px) and (max-width: 767px) {
+  .hero-img1{
+    margin-left: 14%;
+  }
+  .hero-img2{
+    
+    margin-left: 36%;
+  }
+}

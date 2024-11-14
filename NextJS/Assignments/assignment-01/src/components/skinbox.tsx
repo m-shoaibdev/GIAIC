@@ -8,7 +8,7 @@ type TypeSkinbox = {
 }
 export default function SkinBox({src, alt, h2head, partext}:TypeSkinbox) {
     return(
-        <div className="md:w-1/4 md:my-0 my-10 ">
+        <div className="md:w-1/4 my-10 mx-4 md:m-0  ">
           <Image src={src}
             alt={alt}
             className="mx-auto"/>

@@ -21,18 +21,18 @@ export default function Home() {
         <SkinBox src={skin3} alt="Dry skin/Oily skin" h2head="Dry skin/Oily skin" partext="To keep the skin healthy and hydrated, use a gentle cleanser, moisturize regularly with a thick, oil-based cream." />
       </div>
       {/* Product section */} 
-      <div className="bg-lightblue pt-8 my-5 ">
+      <div className="bg-lightblue px-4 pt-8 my-5 ">
         <div className="md:flex gap-4 container mx-auto">
           <ProductGrid />
           <div className="md:w-1/2">
             <HrHeadDivider text="PRODUCTS" rightline={true}/>
-            <p className="text-xl text-bcolor mr-28 text-justify">
+            <p className="text-xl text-bcolor sm:mr-28 text-justify">
               Good skin care involves keeping your skin clean, moisturized, and protected from the sun.Different skin care products can address these concerns by providing hydration, exfoliation, sun protection, and other benefits. It's important to choose products that are appropriate for your skin type and to follow a regular skin care routine for best results.<br/>
               <a href="#" className="underline text-primary inline-block ml-auto w-full text-right">View all</a>
             </p>
           </div>
         </div>
-            <HrHeadDivider leftline={true}  text="Nourish the outer health of your body! " rightline={false}/>
+            <HrHeadDivider leftline={true}  text="Nourish the outer health of your body! " rightline={false} />
       </div>
     </>
   );
