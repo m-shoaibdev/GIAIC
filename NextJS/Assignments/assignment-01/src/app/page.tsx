@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Header from "@/components/header";
 import HeroSection from "@/components/hero-section";
 import HrHeadDivider from "@/components/hrdivider";
 import SkinBox from "@/components/skinbox";
@@ -7,7 +5,6 @@ import skin1 from "../public/kys01.jpg";
 import skin2 from "../public/kys02.jpg";
 import skin3 from "../public/kys03.jpg";
 import ProductGrid from "@/components/productgrid";
-import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -27,7 +24,7 @@ export default function Home() {
           <div className="md:w-1/2">
             <HrHeadDivider text="PRODUCTS" rightline={true}/>
             <p className="text-xl text-bcolor sm:mr-28 text-justify">
-              Good skin care involves keeping your skin clean, moisturized, and protected from the sun.Different skin care products can address these concerns by providing hydration, exfoliation, sun protection, and other benefits. It's important to choose products that are appropriate for your skin type and to follow a regular skin care routine for best results.<br/>
+              Good skin care involves keeping your skin clean, moisturized, and protected from the sun.Different skin care products can address these concerns by providing hydration, exfoliation, sun protection, and other benefits. It is important to choose products that are appropriate for your skin type and to follow a regular skin care routine for best results.<br/>
               <a href="#" className="underline text-primary inline-block ml-auto w-full text-right">View all</a>
             </p>
           </div>
