@@ -9,7 +9,6 @@ import ProductGrid from "@/components/productgrid";
 export default function Home() {
   return (
     <>
-      
       <HeroSection />
       <HrHeadDivider leftline={true} text="KNOW YOUR SKIN" rightline={true}/>
       <div className="md:flex justify-between  text-center container mx-auto md:gap-3 my-10">

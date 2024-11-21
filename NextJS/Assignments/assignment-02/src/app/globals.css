@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #252b42;
+  --foreground: #ffffff;
+  --font-montserrat: var(--font-montserrat);
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-montserrat);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
