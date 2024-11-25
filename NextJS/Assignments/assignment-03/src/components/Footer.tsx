@@ -8,7 +8,7 @@ export default function Footer() {
             <div className="md:container md:mx-auto p-4 border-b border-[#2E4E73] pb-16 text-sm md:text-base">
                 <div className="flex flex-col sm:flex-row gap-11 sm:gap-5  md:gap-10 ">
                     <div className="flex flex-col gap-3.5 lg:flex-1 lg:mr-5">
-                    <Image src={Logo} alt="logo" className=""/>
+                    <Image src={Logo} alt="logo"/>
                     <p>Whitepace was created for the new ways we live and work. We make a better workspace around the world</p>
                     </div>
                     <div className="flex flex-col gap-2 md:gap-3.5 flex-1 lg:-mr-40 lg:ml-20">
@@ -32,7 +32,7 @@ export default function Footer() {
                 </div>
             </div>
             <div>
-                <p className="text-center my-5 text-sm md:text-base tracking-wide">© 2024 Whitepace LLC. | Build with ❤️ by Muhammad Shoaib</p>
+                <p className="text-center my-5 text-sm md:text-base tracking-wide px-4">© 2024 Whitepace LLC. | Build with ❤️ by Muhammad Shoaib</p>
             </div>
         </footer>
     );

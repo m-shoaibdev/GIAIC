@@ -23,7 +23,7 @@ export default function Content( {alignImage, heading, paragraph, textColor, btn
 
             <div className={imgBox === false ? "text-center flex-1 py-10" : `text-${textColor} flex-1 py-10`}>
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold">{heading}</h1>
-                <p className="text-base md:text-lg font-normal my-8 md:mt-10 md:mb-14">
+                <p className="text-base md:text-lg font-normal mt-6 mb-8 md:mt-10 md:mb-14">
                     {paragraph}
                 </p>
               <button className="bg-primary text-white rounded-[6px] px-4 py-3 lg:px-6 lg:py-4 text-base md:text-lg inline-flex items-center my-2">
