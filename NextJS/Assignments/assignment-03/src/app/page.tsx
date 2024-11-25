@@ -1,6 +1,7 @@
 import Content from "@/components/Content";
 import HeroSection from "@/components/Hero-section";
 import RoundCircle from "../public/WorkTogetherImage.png";
+import Sponsor from "@/components/Sponsor-section";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
     <div className="py-8 md:py-20 lg:py-24">
       <Content heading="Your work, everywhere you are" paragraph="Access your notes from your computer, phone or tablet by synchronising with various services, including whitepace, Dropbox and OneDrive. The app is available on Windows, macOS, Linux, Android and iOS. A terminal app is also available!" btn="Try Taskey" imgBox={false}/>
     </div>
+    <Sponsor />
     </>
   );
 }
