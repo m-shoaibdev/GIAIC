@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { blogsData } from "../page";
+import AddComment from "@/components/addcomment";
 
 interface params {
     params: Promise<{ posturl: string }>
@@ -15,14 +16,14 @@ export default async function SinglePost({ params }: params) {
     }
 
     return (
-        <div className="flex gap-8">
+        <div className="flex gap-8 md:flex-row flex-col">
             <div className="card bg-base-100 shadow-xl flex-1">
                 <figure>
                     <Image src={getPostData()?.img || "/default-image.jpg"} alt={getPostData()?.title || "Default Title"} width={600} height={500}/>
                 </figure>
                 <div className="card-body">
                 <div className="card-actions justify-between">
-                        <div className="">Posted: {getPostData()?.date}</div>
+                        <div className="">Published: {getPostData()?.date}</div>
                         <div>Category: {getPostData()?.category}</div>
                         <div>Comments: {getPostData()?.comments.length}</div>
                 </div>
@@ -40,6 +41,7 @@ export default async function SinglePost({ params }: params) {
                         </div>
                     </div>
                 </div>
+                <AddComment />
             </div>
 
             <div className="card bg-base-100 shadow-xl w-[400px] p-4">
