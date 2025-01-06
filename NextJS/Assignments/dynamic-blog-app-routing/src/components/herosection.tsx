@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <div className="hero bg-base-200 bg-opacity-50 py-10">
@@ -8,7 +10,7 @@ export default function Hero() {
         Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
         quasi. In deleniti eaque aut repudiandae et a id nisi.
       </p>
-      <button className="btn btn-primary">View All</button>
+      <Link href="/blogs" className="btn btn-primary">View All</Link>
     </div>
   </div>
 </div>

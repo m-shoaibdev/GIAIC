@@ -73,7 +73,22 @@ export const blogsData = [
             { "id": 1, "name": "Techie Lisa", "message": "AI agents are game-changers!" },
             { "id": 2, "name": "Dev Pro", "message": "Excited about future prospects!" }
         ]
-    }
+    },
+    {
+        "id": 6,
+        "img": "https://media.licdn.com/dms/image/v2/D4D12AQHH_4W1vU65Ew/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1721648824420?e=2147483647&v=beta&t=VOjMK8hgwfrBrUmzJrr7S78rwL1CR0px_WPBH3sONO4",
+        "title": "Top 10 Food ",
+        "postSlug": "travel-destinations-new",
+        "content": "As global travel continues to evolve, new and exciting destinations are emerging on the travel radar. For 2024, these hidden gems offer unique experiences, rich cultures, and breathtaking landscapes that are waiting to be explored. Here are the top 10 emerging travel destinations for 2024 that should be on your bucket list. Why Explore Emerging Travel Destinations Emerging travel destinations offer a fresh perspective, away from the crowds and typical tourist routes. They provide an opportunity to discover new cultures, cuisines, and landscapes, often with more affordability and authenticity.",
+        "category": "Food",
+        "date": "2023-08-15",
+        "author": "World Explorer",
+        "comments": [
+            { "id": 1, "name": "Traveler Ted", "message": "Adding these to my bucket list!" },
+            { "id": 2, "name": "Wanderlust Lucy", "message": "Great recommendations!" },
+            { "id": 3, "name": "Travel Blogger", "message": "Excited to explore these destinations!" },
+        ]
+    },
 ];
 
 export default function Blog() {
@@ -92,7 +107,7 @@ export default function Blog() {
                             </Link>
                             <div className="card-body">
                                 <h2 className="card-title">{post.title}</h2>
-                                <p>{post.content}</p>
+                                <p className="flex-grow-0 mb-4">{post.content}</p>
                                 <div className="card-actions justify-end">
                                     <Link href={`/blogs/${post.postSlug}`} className="btn btn-primary">Read More</Link>
                                 </div>
