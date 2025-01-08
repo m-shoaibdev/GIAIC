@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import PostCard from "@/components/postcard";
+
 
 export const blogsData = [
     {
@@ -26,9 +26,6 @@ export const blogsData = [
         "date": "2023-08-15",
         "author": "World Explorer",
         "comments": [
-            { "id": 1, "name": "Traveler Ted", "message": "Adding these to my bucket list!" },
-            { "id": 2, "name": "Wanderlust Lucy", "message": "Great recommendations!" },
-            { "id": 3, "name": "Travel Blogger", "message": "Excited to explore these destinations!" },
         ]
     },
     {
@@ -93,30 +90,17 @@ export const blogsData = [
 
 export default function Blog() {
     return (
-        <>
-            <h1 className="text-3xl font-bold mb-8">All Blogs and Articles</h1>
+        <div className="md:container md:mx-auto px-3.5 my-8">
+            <h1 className="text-3xl font-bold mb-8 text-center">Discover The Latest Articles</h1>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
                 {
                     blogsData.map((post) => (
-                        <div key={post.id} className="card bg-base-100  shadow-xl">
-                            <Link href={`/blogs/${post.postSlug}`}>
-                            <figure>
-                                <Image src={post.img} alt={post.title} width={500} height={300} />
-                            </figure>
-                            </Link>
-                            <div className="card-body">
-                                <h2 className="card-title">{post.title}</h2>
-                                <p className="flex-grow-0 mb-4">{post.content}</p>
-                                <div className="card-actions justify-end">
-                                    <Link href={`/blogs/${post.postSlug}`} className="btn btn-primary">Read More</Link>
-                                </div>
-                            </div>
-                        </div>
+                        <PostCard key={post.id} post={post} />
                     ))
                 }
 
             </div>
-        </>
+        </div>
     );
 }

@@ -8,7 +8,8 @@ export default function Navbar() {
   const toggleDropdown = () => setIsOpen(!isOpen);
   const closeDropdown = () => setIsOpen(false);
     return (
-<div className="navbar bg-base-100">
+<div className="bg-base-100">
+  <div className="navbar md:container md:mx-auto px-3.5">
   <div className="navbar-start">
       <div className="dropdown">
         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden" onClick={toggleDropdown}>
@@ -39,7 +40,7 @@ export default function Navbar() {
         }
         
       </div>
-      <Link href="/" className="text-3xl font-bold text-[#f61600] ">BlogSpot</Link>
+      <Link href="/" className="text-3xl font-bold text-[#f61600]">BlogSpot</Link>
     </div>
   <div className="navbar-center hidden lg:flex">
       <ul className="menu menu-horizontal px-1 space-x-2">
@@ -102,6 +103,7 @@ export default function Navbar() {
         <li><Link href="">Logout</Link></li>
       </ul>
     </div> */}
+  </div>
   </div>
 </div>
     );

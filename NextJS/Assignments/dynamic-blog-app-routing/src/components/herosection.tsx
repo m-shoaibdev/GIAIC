@@ -10,7 +10,7 @@ export default function Hero() {
         Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
         quasi. In deleniti eaque aut repudiandae et a id nisi.
       </p>
-      <Link href="/blogs" className="btn btn-primary">View All</Link>
+      <Link href="/blogs" className="btn btn-primary">View All Articles</Link>
     </div>
   </div>
 </div>
