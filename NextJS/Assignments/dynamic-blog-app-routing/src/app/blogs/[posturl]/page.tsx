@@ -28,7 +28,7 @@ export default async function SinglePost({ params }: params) {
         <div className="md:container md:mx-auto px-3.5 my-8 flex gap-8 md:flex-row flex-col">
             <div className="card bg-base-100 shadow-xl flex-1 self-start">
                 <figure>
-                    <Image src={getPostData()?.img || "/default-image.jpg"} alt={getPostData()?.title || "Default Title"} width={600} height={500} />
+                    <Image src={getPostData()?.img || "/default-image.jpg"} alt={getPostData()?.title || "Default Title"} width={1000} height={500} />
                 </figure>
                 <div className="card-body">
                     <div className="card-actions justify-between">
