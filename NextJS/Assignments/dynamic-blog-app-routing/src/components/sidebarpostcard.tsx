@@ -25,8 +25,8 @@ export default function SidePostCard({ post }: PostCardProps) {
         <div className="card bg-base-100  shadow-xl">
             <Link href={`/blogs/${post.postSlug}`}>
                 <figure>
-                    <Image src={post.img} alt={post.title} width={500} height={300} />
-                </figure>
+                    <Image src={post.img} alt={post.title} width={500} height={200} className="w-full h-auto" />
+                </figure> 
             </Link>
             <div className="card-body">
             <div className="card-actions justify-between">

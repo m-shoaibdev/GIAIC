@@ -64,7 +64,7 @@ export default async function SinglePost({ params }: params) {
                 <AddComment />
             </div>
 
-            <div className="w-[400px] p-4">
+            <div className="w-full md:w-[300px] lg:w-[400px] p-4">
                 {  blogsData.filter((post) => post.category === getPostData()?.category)
                             .filter((post) => post.id !== getPostData()?.id)
                             .length > 0 ? 

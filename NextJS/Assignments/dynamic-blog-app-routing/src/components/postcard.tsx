@@ -26,7 +26,7 @@ export default function PostCard({ post }: PostCardProps) {
 
             <Link href={`/blogs/${post.postSlug}`}>
                 <figure>
-                    <Image src={post.img} alt={post.title} width={500} height={300} />
+                    <Image src={post.img} alt={post.title} width={1000} height={400} className="w-full h-auto" />
                 </figure>
             </Link>
             <div className="card-body">
